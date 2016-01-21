@@ -4,7 +4,9 @@
 
 /*Animate.css*/
 
-html {overflow: none;}
+html {
+	overflow:hidden;
+}
 
 #icon {
 	-webkit-animation-delay: 0.1s;

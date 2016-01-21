@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <script src="../js/life.js"></script>
+    <title>Игра "Жизнь"</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../css/animate.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid content cnt">
+        <div class="row">
+            <div class="col-md-3 animated fadeInUp" id="options">
+                <a href="../index.html"><img src="../icons/molecule.png"></a>
+                <a href="../index.html"><h3>ЖИЗНЬ</h3></a>
+                <hr>
+                <p>Разработанно и сдизайнено</p>
+                <input type="button" value="МИХАИЛ ГНЕДАШЕВ">
+                <br>
+                <br>
+                <input type="button" value=" ЕВГЕНИЙ СКЛЯРОВ  ">
+                <br>
+                <br>
+                <p>Как играть?</p>
+                <input type="button" value="ПРАВИЛА" onclick="overlay()">
+
+            </div>
+            <div class="col-md-6 animated fadeInUp" id="canvas">
+                <br>
+                <canvas id="life">Пора уже в этой жизни что-то менять</canvas>
+                <br>
+                <div class="animated fadeInUp" id="buttons2">
+                    <input type="button" src="life.js" value="СЛЕДУЮЩИЙ ХОД" onclick="next_step()">
+                    <input type="button" src="life.js" value="СТАРТ" onclick="start()">
+                    <input type="button" src="life.js" value="СТОП" onclick="stop()">
+                    <input type="button" src="life.js" value="ОЧИСТИТЬ" onclick="cleaning()">
+                </div>
+            </div>
+            <div class="col-md-3 options animated fadeInUp" id="options">
+                <img src="../icons/settings.png">
+                <h3>НАСТРОЙКИ</h3>
+                <hr>
+                <p>Размер поля</p>
+                <input type="button" class="field-btn" value="+" onclick="fieldPlus()">
+                <input type="button" class="field-btn" value="–" onclick="fieldMinus()">
+                <br>
+                <br>
+                <p>Скорость игры</p>
+                <input type="button" class="field-btn" value="+" onclick="speedUp()">
+                <input type="button" class="field-btn" value="–" onclick="speedDown()">
+            </div>
+            <!-- Modal -->
+                <div id="overlay">
+                    <div>
+                        <img src="../icons/rules.png">
+                        <h3>Как играть?</h3>
+                        <hr>
+                        <p>Щёлкаем в случайных местах поля, жмем старт, радуемся.</p>
+                        <p>Если этого не достаточно, увеличиваем поле, повторяем процедуру.</p>
+                        <p>Пошаговая стратегия активируется кнопкой "Следующий ход".</p>
+                        <p>Все клетки умерли? Жмём "Очистить" плодим новые.</p>
+                        <br>
+                        <p>Сделано на коленке и энтузиазме.</p>
+                        <br>
+                        <input type="button" value="ЗАКРЫТЬ" onclick="overlay()">
+                        <br>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <!-- scripts goes here -->
+    <script>
+        init();
+    </script>
+    <!-- Modal -->
+    <script src="../js/modal.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

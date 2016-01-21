@@ -1,0 +1,199 @@
+/*Fonts*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,900,700&subset=latin,cyrillic-ext);
+
+/*Animate.css*/
+
+#icon {
+	-webkit-animation-delay: 0.1s;
+}
+
+#category {
+	-webkit-animation-delay: 0.2s;
+}
+
+#head {
+	-webkit-animation-delay: 0.4s;  
+}
+
+#button {
+	-webkit-animation-delay: 0.6s;
+}
+
+/*---*/
+
+#head2 {
+	-webkit-animation-delay: 0.1s;
+}
+
+#canvas {
+	-webkit-animation-delay: 0.3s;
+}
+
+#buttons2 {
+	-webkit-animation-delay: 0.7s;
+}
+
+#options {
+	-webkit-animation-delay: 0.6s;
+}
+
+/*animation*/
+
+@-webkit-keyframes AnimationName {
+     0%{background-position:2% 0%}
+     50%{background-position:99% 100%}
+     100%{background-position:2% 0%}
+}
+
+@keyframes AnimationName { 
+     0%{background-position:2% 0%}
+     50%{background-position:99% 100%}
+     100%{background-position:2% 0%}
+ }
+
+/*Text*/
+
+h1 {
+	font-family: 'Roboto';
+	font-weight: 900;
+	font-size: 150px;
+}
+
+h2 {
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 30px;
+}
+
+h3 {
+	font-family: 'Roboto';
+	font-weight: 900;
+	font-size: 24px;
+
+}
+
+p {
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 18px;
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+a:focus {
+	color: white;
+	text-decoration: none;
+}
+
+canvas {
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 4px;
+	border-color: white;
+	margin-bottom: 4%;
+}
+
+hr {
+	max-width: 150px;
+	color: white;
+}
+
+/*inputs*/
+
+input {
+	margin-right: 2px;
+	margin-left: 2px;
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 14px;
+	border-style: none;
+	padding: 18px 36px;
+	border-radius: 4px;
+	color: #343434;
+	background-color: white;
+	transition: .3s;
+}
+
+input:hover {
+	cursor: pointer;
+	background-color: #f6f6f6;
+	transition: .5s;
+}
+
+/*contents*/
+
+.content {
+	background: linear-gradient(160deg, #2aadef, #49e760, #e7cb49, #e77049);
+ 	background-size: 500% 500%;
+	-webkit-animation: AnimationName 30s ease infinite;
+	animation: AnimationName 30s ease infinite;
+	height: 100vh;
+	color: white;
+	text-align: center;
+}
+
+.content-in {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.cnt {
+	padding-top: 3%;
+}
+
+/*Modal*/
+
+#overlay {
+	visibility: hidden;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 1000;
+	color: #343434;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#overlay p {
+	font-family: 'Roboto';
+	font-size: 18px;
+	font-weight: 400;
+}
+
+#overlay div {
+	min-width: 640px;
+	max-width: 960px;
+	border-radius: 4px;
+	margin: 100px auto;
+	background-color: #fff;
+	padding: 15px;
+	text-align: center;
+}
+
+#overlay input {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #2ecc71;
+}
+
+#overlay input:hover {
+	color: white;
+	background-color: #2ecc71;
+}
+
+#overlay hr {
+	border-color: #2ecc71;
+	max-width: 300px;
+}

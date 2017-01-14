@@ -23,17 +23,16 @@ for k, v in images.items():
 
 for k, v in images.items():
 	html_name = './' + str(k) + '/ticket.html'
-	if not os.path.exists('./' + str(k) + '/ticket.html'):
-		s =  '<html>\n<head>\n\t<title>'
-		s += tickets[int(k) - 1]
-		s += '</title>\n'
-		s += '\t<meta charset="utf-8">\n'
-		s += '</head>\n<body>\n'
-		for item in v:
-			s += '\t<img src="./' + item + '" width="100%">\n'
-		s += '</body>\n</html>\n'
-		with open('./' + k + '/ticket.html', 'w') as f:
-			f.write(s)
+	s =  '<html>\n<head>\n\t<title>'
+	s += tickets[int(k) - 1]
+	s += '</title>\n'
+	s += '\t<meta charset="utf-8">\n'
+	s += '</head>\n<body>\n'
+	for item in sorted(v,key=lambda x:int(x.split('.')[1])):
+		s += '\t<img src="./' + item + '" width="100%">\n'
+	s += '</body>\n</html>\n'
+	with open('./' + k + '/ticket.html', 'w') as f:
+		f.write(s)	
 
 s =  '<html>\n<head>\n\t<title>'
 s += 'Билеты'

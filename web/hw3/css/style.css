@@ -17,19 +17,21 @@
     background-image: url('../imgs/social_icons.png');
     background-repeat: no-repeat;
 
+    border-radius: 50%;    
+
     width: 34px;
     height: 34px;
     position: absolute;
 }
 
 .twitter {
-    background-position: -116px -40px;
+    background-position: -118px -40px;
     bottom: 70px;
     left: 50px;
 }
 
 .twitter:hover {
-    background-position: -116px 0px;
+    background-position: -118px 0px;
 }
 
 .fb {

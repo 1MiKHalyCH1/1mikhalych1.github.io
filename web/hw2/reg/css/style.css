@@ -1,0 +1,46 @@
+label, h2 {
+	color: #fff;
+	font-family: sans-serif;
+}
+
+form {
+	margin: auto;
+	width: 480px;
+	background-color: #2196F3;
+	border: 3px solid #1976D2;
+}
+
+input {
+	box-sizing: border-box;
+}
+
+.inline {
+	display: inline-block;
+}
+
+.inline label {
+	display: block;
+}
+
+.input-box {
+	padding: 20px 80px 20px 30px;
+}
+
+.header {
+	padding-left: 30px;
+}
+
+.send-btn {
+	color: #212121;
+	background-color: #FFF176;
+	border: none;
+	padding: 5px 8px 5px 8px;
+}
+
+.full-w {
+	width: 100%;
+}
+
+.mr-2 {
+	margin-right: 20px;
+}

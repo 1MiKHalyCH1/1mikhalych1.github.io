@@ -1,0 +1,43 @@
+.circle {
+    border-radius: 50%;
+}
+
+.container {
+    position: relative;
+}
+
+.people {
+    z-index: 1;
+    width: 300px;
+    padding: 30px;
+}
+
+.social {
+    z-index: 2;
+    background-image: url('../imgs/social_icons.png');
+    background-repeat: no-repeat;
+
+    width: 34px;
+    height: 34px;
+    position: absolute;
+}
+
+.twitter {
+    background-position: -116px -40px;
+    bottom: 70px;
+    left: 50px;
+}
+
+.twitter:hover {
+    background-position: -116px 0px;
+}
+
+.fb {
+    background-position: -156px -40px;
+    bottom: 70px;
+    right: 55px;
+}
+
+.fb:hover {
+    background-position: -156px 0px;
+}

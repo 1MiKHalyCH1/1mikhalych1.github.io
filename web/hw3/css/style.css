@@ -7,16 +7,12 @@
 }
 
 .people {
-    z-index: 1;
     width: 300px;
     padding: 30px;
 }
 
 .social {
-    z-index: 2;
     background-image: url('../imgs/social_icons.png');
-    background-repeat: no-repeat;
-
     border-radius: 50%;    
 
     width: 34px;

@@ -34,6 +34,7 @@ def generate(dirname):
 		s += '</title>\n'
 		s += '\t<meta charset="utf-8">\n'
 		s += '</head>\n<body>\n'
+		print(k,v)
 		for item in sorted(v,key=lambda x:int(x.split('.')[1])):
 			s += '\t<img src="./' + item + '" width="100%">\n'
 		s += '</body>\n</html>\n'

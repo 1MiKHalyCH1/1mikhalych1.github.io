@@ -7,12 +7,10 @@ from collections import defaultdict
 
 def generate(dirname):
 	with open(os.path.join(dirname, 'tickets.txt')) as f:
-		lines = f.readlines()
-		tickets = list(map(lambda x:x.strip(), lines))
+		tickets = list(map(lambda x:x.strip(), f.readlines()))
 
-	d = [x for x in os.listdir(os.path.join(dirname, 'Images')) if x.lower().endswith('.jpg')]
 	images = defaultdict(list)
-	for x in d:
+	for x in (x for x in os.listdir(os.path.join(dirname, 'Images'))):
 		images[x.split('.')[0]].append(x)
 
 	for i in images.keys():

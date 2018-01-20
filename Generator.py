@@ -44,6 +44,7 @@ def generate(dirname):
 	s += 'Билеты'
 	s += '</title>\n'
 	s += '\t<meta charset="utf-8">\n'
+	s += '\t<meta name="apple-mobile-web-app-capable" content="yes" />\n'	
 	s += '</head>\n<body>\n'
 	for i in range(len(tickets)):
 		s += '\t<a href="./'+ str(i+1) +'/ticket.html">'+tickets[i]+'</a><br>\n'
